@@ -20,8 +20,8 @@ public class UserController {
 
     @GetMapping("/{id}")
     public ResponseEntity<Aluno> findById(@PathVariable Long id) {
-        var aluno = userService.findById(id);
-        return ResponseEntity.ok(aluno);
+        var user = userService.findById(id);
+        return ResponseEntity.ok(user);
     }
 
     @PostMapping
